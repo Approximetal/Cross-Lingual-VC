@@ -9,10 +9,9 @@
 <h2><strong>Audio Samples from "Cross-lingual Voice Conversion based on Data Driven Training Strategy</strong>"</h2>
 
 <h3>Authors: </h3>
-Zhiyuan Zhao, Co-authors
+Zhiyuan Zhao, Ruotong Wang, Luoyu Bai, Bai Li, Wan Ding, Dongyan Huang
 <h3>Abstract: </h3>
-We present a multi-speaker, cross-lingual Voice Conversion model based on seq2seq with attention structure. It is able to convert one speaker's voice to another and maintain the speech context, including cross-language conversion. By adding Speaker Encoder into the structure, it can transfer multiple speakers' voice in the same model, therefore, no need for customized fine-tune step. Besides, two training strategies are presented to solve issues that are commonly seen in reality: (1) self-conversion strategy is used to avoid unsuccessful alignment, (2) one-to-many dataset is applied to reduce pronunciation errors. <p>&nbsp;</p>
-<hr>
+We present a multi-speaker, multi-lingual voice conversion model to support cross-lingual conversion. There are three contributions in this paper: (1) A self-conversion training strategy makes the attention module more stable for alignment. (2) A one-to-many dataset, which takes TTS synthesised audio as input, disentangles correlations between input speaker characteristics and speech contents, reduces pronunciation errors. (3) A many-to-many model trained on VCC2020 dataset realises cross-lingual voice conversion. Each speaker can utter English, Mandarin, Germany and Finnish. The proposed strategies are data-driven, do not need extra labels, auxiliary modules, or parallel utterances between different languages. Our experiment demonstrates that the naturalness and similarity of our result are almost the same as human; the quality of synthesised audios get close to original sounds.<hr>
 <h5>&nbsp;</h5>
 <h3>1. One-to-Many VS Many-to-Many Dataset</h3>
 
