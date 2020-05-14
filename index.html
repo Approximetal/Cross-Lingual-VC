@@ -11,8 +11,11 @@
 <h3>Authors: </h3>
 Zhiyuan Zhao, Ruotong Wang, Luoyu Bai, Bai Li, Wan Ding, Dongyan Huang
 <h3>Abstract: </h3>
-We present a multi-speaker, multi-lingual voice conversion model to support cross-lingual conversion. There are three contributions in this paper: (1) A self-conversion training strategy makes the attention module more stable for alignment. (2) A one-to-many dataset, which takes TTS synthesised audio as input, disentangles correlations between input speaker characteristics and speech contents, reduces pronunciation errors. (3) A many-to-many model trained on VCC2020 dataset realises cross-lingual voice conversion. Each speaker can utter English, Mandarin, Germany and Finnish. The proposed strategies are data-driven, do not need extra labels, auxiliary modules, or parallel utterances between different languages. Our experiment demonstrates that the naturalness and similarity of our result are almost the same as human; the quality of synthesised audios get close to original sounds.<hr>
-<h5>&nbsp;</h5>
+  <p>
+  Cross-lingual many-to-many voice conversion is a challenging task due to the pronunciation error issues and the lack of parallel bilingual dataset. In this paper, we propose a cross-lingual many-to-many voice conversion model, consisting of an end-to-end encoder to extract speech content, a speaker encoder to verify speaker identity, and a decoder with attention to synthesize personalized speech. During training process, we employ a self-conversion training strategy to make the attention model more stable for alignment. Then we construct one-to-many training system, which takes parallel TTS synthesized speech and multi-speaker natural speech signals, to disentangle speaker identify from speech contents, thus reduce pronunciation errors. Finally, based on one-to-many pre-trained model, we explore many-to-many model using VCC2020 dataset to realize cross-lingual voice conversion, i.e., English, Mandarin, Germany and Finnish. The proposed approach does not need extra labels, parallel bilingual dataset, or auxiliary modules such as Connectionist Temporal Classification (CTC), Automatic Speech Recognition (ASR), and Variational Auto-Encoder (VAE). Our experimental results show that our proposed approach significantly improves naturalness and similarity of converted speech, which close to human.
+  </p>
+<hr>
+  <h5>&nbsp;</h5>
 <h3>1. One-to-Many VS Many-to-Many Dataset</h3>
 
 <p>We pick up one sentence from <a href="https://openslr.org/38/">ST-CMDS</a> Dataset for example, meanwhile use TTS model to synthesize a same sentence. Then use these two audios as input for one-to-many and many-to-many models.</p>
@@ -31,7 +34,7 @@ We present a multi-speaker, multi-lingual voice conversion model to support cros
 </table>
 
 <p>&nbsp;</p>
-
+<!-- 
 <table border="1">
   <tr>
     <td><div align="center">Target Speaker</div></td>
@@ -78,7 +81,10 @@ We present a multi-speaker, multi-lingual voice conversion model to support cros
 </table>
 <h3>&nbsp;</h3>
 <h3>&nbsp;</h3>
-<h3>2. Cross Lingual Voice Conversion</h3>
+
+-->
+
+<h3>Cross Lingual Voice Conversion</h3>
 
 <p> There are 4 languages in <a href="http://www.vc-challenge.org/rules.html">VCC2020</a> dataset, we choose one sentences from each language set, and synthesize the voice of target speakers. </p>
 <p> In &quot;TEF1&quot;, &quot;T&quot; means Target, &quot;E&quot; means English, &quot;F&quot; means Female, &quot;1&quot; means speaker ID, other speakers are the same.</p>
