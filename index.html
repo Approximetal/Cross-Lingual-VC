@@ -6,13 +6,13 @@
 <style type="text/css">
 </style></head>
 <body>
-<h2><strong>Audio Samples from "Cross-Lingual Many-to-Many Voice Conversion by Disentangling Speaker Identity from Speech Content</strong>"</h2>
+<h2><strong>Audio Samples from "Cross-Lingual Many-to-Many Voice Conversion by Disentangling Speaker Characteristic from Speech Content</strong>"</h2>
 
 <h3>Authors: </h3>
 Zhiyuan Zhao, Ruotong Wang, Luoyu Bai, Bai Li, Wan Ding, Dongyan Huang
 <h3>Abstract: </h3>
   <p>
-  Cross-lingual many-to-many voice conversion is a challenging task due to the pronunciation error issues and the lack of parallel bilingual dataset. In this paper, we propose a cross-lingual many-to-many voice conversion model, consisting of an end-to-end encoder to extract speech content, a speaker encoder to verify speaker identity, and a decoder with attention to synthesize personalized speech. During training process, we employ a self-conversion training strategy to make the attention model more stable for alignment. Then we construct one-to-many training system, which takes parallel TTS synthesized speech and multi-speaker natural speech signals, to disentangle speaker identify from speech contents, thus reduce pronunciation errors. Finally, based on one-to-many pre-trained model, we explore many-to-many model using VCC2020 dataset to realize cross-lingual voice conversion, i.e., English, Mandarin, Germany and Finnish. The proposed approach does not need extra labels, parallel bilingual dataset, or auxiliary modules such as Connectionist Temporal Classification (CTC), Automatic Speech Recognition (ASR), and Variational Auto-Encoder (VAE). Our experimental results show that our proposed approach significantly improves naturalness and similarity of converted speech, which close to human.
+    Cross-lingual many-to-many voice conversion (VC) is a challenging task due to the pronunciation error issues and the lack of parallel bilingual dataset. In this paper, we propose a cross-lingual many-to-many voice conversion model, consisting of a VC encoder to extract speech content, a speaker encoder to verify speaker characteristics, and a decoder with attention to synthesize personalized speech. During training process, we employ a self-conversion training strategy to make the attention model more robust for alignment. Then we construct one-to-many training system, which takes parallel TTS synthesized speech and multi-speaker natural speech signals, to disentangle speaker characteristics from speech contents, thus reduce pronunciation errors. Finally, based on one-to-many pre-trained model, we explore many-to-many model using VCC 2020 dataset to realize cross-lingual VC, i.e., English, Mandarin, Germany and Finnish. The proposed approach does not need extra labels, parallel bilingual dataset, or auxiliary modules such as Connectionist Temporal Classification (CTC), Automatic Speech Recognition (ASR), and Variational Auto-Encoder (VAE). Our experimental results show the proposed approach significantly improves naturalness and similarity of converted speech , which close to human's voice. 
   </p>
 <hr>
   <h5>&nbsp;</h5>
@@ -89,7 +89,7 @@ Zhiyuan Zhao, Ruotong Wang, Luoyu Bai, Bai Li, Wan Ding, Dongyan Huang
 
 <h3>Cross-Lingual Voice Conversion</h3>
 
-<p> There are 4 languages in <a href="http://www.vc-challenge.org/rules.html">VCC2020</a> dataset, we choose one sentences from each language set, and synthesize the voice of target speakers. </p>
+<p> There are 4 languages in <a href="http://www.vc-challenge.org/rules.html">VCC2020</a> dataset, we choose one sentence from each language, and synthesize the speech of target speakers. </p>
 <p> In &quot;TEF1&quot;, &quot;T&quot; means Target, &quot;E&quot; means English, &quot;F&quot; means Female, &quot;1&quot; means speaker ID, other speakers are the same.</p>
 
 
